@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { RefreshCw, Play, ShieldAlert, CheckCircle, ArrowRight, Settings2, History } from 'lucide-react';
+import { RefreshCw, Play, ShieldAlert, CheckCircle, ArrowRight, Settings2, History, Cpu } from 'lucide-react';
 import { DecisionReceipt } from '@/lib/adrs/crypto';
 import { getReceipts } from '@/lib/adrs/store';
 import { simulateCounterfactual } from '@/lib/adrs/ai';
