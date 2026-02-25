@@ -8,11 +8,19 @@ import { getReceipts } from '@/lib/adrs/store';
 import { simulateCounterfactual } from '@/lib/adrs/ai';
 import Link from 'next/link';
 
+interface SimulationResult {
+    isDifferent: boolean;
+    originalThreshold: number;
+    newThreshold: number;
+    originalOutcome: string;
+    simulatedOutcome: string;
+}
+
 export default function SimulatorPage() {
     const [receipts, setReceipts] = useState<DecisionReceipt[]>([]);
     const [selectedReceiptId, setSelectedReceiptId] = useState('');
     const [threshold, setThreshold] = useState(0.7);
-    const [simulationResult, setSimulationResult] = useState<any>(null);
+    const [simulationResult, setSimulationResult] = useState<SimulationResult | null>(null);
     const [isSimulating, setIsSimulating] = useState(false);
 
     useEffect(() => {
