@@ -184,7 +184,7 @@ export default function SimulatorPage() {
                                 </div>
 
                                 <div className="mt-8 p-4 rounded-xl bg-white/5 border border-white/5 text-xs text-muted-foreground leading-relaxed italic">
-                                    "Under the simulated threshold of {simulationResult.newThreshold}, the AI output {simulationResult.isDifferent ? 'deviates' : 'remains consistent'} from the original audit record. This indicates {simulationResult.isDifferent ? 'legal exposure if policy changes are retroactive.' : 'robust compliance posture.'}"
+                                    &quot;Under the simulated threshold of {simulationResult.newThreshold}, the AI output {simulationResult.isDifferent ? 'deviates' : 'remains consistent'} from the original audit record. This indicates {simulationResult.isDifferent ? 'legal exposure if policy changes are retroactive.' : 'robust compliance posture.'}&quot;
                                 </div>
                             </motion.div>
                         )}
